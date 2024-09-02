@@ -1,0 +1,155 @@
+/*Alternative CSS Box Model*/
+* {
+    box-sizing: border-box;
+}
+body {
+    /* Center the form on the page */
+    text-align: center;
+    vertical-align: middle;
+    margin: 5rem;
+    padding: 0.15rem 0.25rem;
+  }
+  form {
+    display: inline-block;
+    /*Form line*/
+    padding: 0.28em;
+    border: 2px solid lime;
+    border-radius: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+form div {
+    margin-bottom: 1rem;
+}
+input {
+    width: 100%;
+    padding: 0.15rem 0.25rem;
+    border-radius: 0.25rem;
+}
+label {
+    margin-bottom: 0.5rem;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+form li + li {
+    margin-top: 5em;
+  }
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textarea have a monospace font */
+    font: 1em 'Arial Narrow Condensed';
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid black;
+  }
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: lime;
+  }
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: middle;
+    text-align: center;
+    /* Provide space to type some text */
+    height: 4em;
+  }
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+  /*General Styles*/
+  body
+  {
+      background-color: black;
+      color: white;
+      font-family: 'Arial Narrow Condensed', 'Times New Roman', serif;
+      font-size: 1.25rem;
+    }
+h1 {
+    font-family: 'Arial Narrow Condensed', sans-serif;
+    font-size:  2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Arial Narrow Condensed", 'Courier New', Courier, monospace;
+    color: lime;
+    background-color: black;
+
+}
+h3 {
+    font-size: 1.25rem;
+    font-family: "Arial Narrow Condensed", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline overline;
+    color: orchid;
+    background-color: black;
+}
+p {
+    font-family: "Arial Narrow Condensed", 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+em {
+    font-family: 'Arial Narrow Condensed';
+    font-size: 1.15rem;
+    color: ghostwhite;
+    background-color: black;
+}
+strong {
+    font-family: 'Arial Narrow Condensed', sans-serif;
+    font-size: 1.15rem;
+}
+/*Flex Box Styles*/
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Links*/
+a {
+    background-color: black;
+    color: orchid;
+}
+a:hover {
+    background-color: white;
+}
+/* List Styles */
+ul {
+    border: 2px solid lime;
+    /* flex-flow: row wrap; overrides flex-wrap: wrap; & flex-direction: row; Also overrides: gap 4rem; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 1rem;
+    /* flex: 1; overrides justify-content & align-item */
+}
+.container {
+    color: ghostwhite;
+    background-color: lime;
+    font-family: Impact, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.22rem;
+}
